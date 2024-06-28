@@ -1,0 +1,27 @@
+.general-information {
+    margin: 0 auto;
+  }
+  
+  .number-circle {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    line-height: 1.5em;
+    border-radius: 50%;
+    margin: 0 0.2em;
+  }
+  
+  .content-box {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .content-text {
+    color: #333;
+  }
+  

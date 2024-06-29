@@ -189,7 +189,7 @@ code {
 }
 .footer {
   grid-area: bottom-section;
-  bottom: 0;
+  display: grid;
   z-index: 1;
   background-color: #f0f0f0;
 }

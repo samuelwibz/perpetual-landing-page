@@ -15,7 +15,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="footerrr">
+    <div className="footer-content">
       <div className="footer-title">
         <Text fontSize="100px" borderBottom="1px solid #ddd">
           Get in touch
@@ -43,7 +43,7 @@ const Footer = () => {
         </Stack>
       </div>
       <div className="footer-links-col-2">
-      <Stack direction="column" spacing={4} >
+        <Stack direction="column" spacing={4}>
           <Link href="#">LinkedIn</Link>
           <Link href="#">Other Social</Link>
           <Link href="#">Other Social</Link>

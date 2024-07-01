@@ -91,7 +91,6 @@ const EnquiryForm = ({ onClose }) => {
                   borderRadius="md"
                   bg="transparent"
                   borderColor="gray.500"
-                  placeholder="Email*"
                   _focus={{ boxShadow: "none", borderColor: "gray.700" }}
                 />
                 <ErrorMessage name="email" component={FormErrorMessage} />

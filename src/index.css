@@ -1,9 +1,16 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -18,6 +25,7 @@ code {
     "bottom-section";
   grid-template-rows: auto auto auto;
   grid-template-columns: 1fr;
+  width: 100vw;
 }
 
 .circle {
@@ -81,6 +89,7 @@ code {
   background: linear-gradient(135deg, #000000 0%, #01011d 50%, #010149 100%);
   background-size: cover;
   background-blend-mode: overlay;
+  overflow: hidden;
 
   .header {
     grid-area: header;
@@ -89,7 +98,7 @@ code {
     z-index: 1000;
     transition: background-color 1s ease;
   }
-  
+
   .header.scrolled {
     background-color: #01011d;
   }
@@ -100,8 +109,8 @@ code {
     justify-self: center;
 
     .product-demo {
-      width: 500px;
-      height: 500px;
+      max-width: 90vw; /* Ensure it fits within the viewport */
+      max-height: 90vh;
       border: 2px dashed #ccc;
       display: flex;
       justify-content: center;
@@ -176,9 +185,6 @@ code {
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1px 1fr;
-    /* background-color: #000041;
-     */
-    /* background: linear-gradient(135deg, #000000 0%, #01011d 50%, #010149 100%); */
     background: radial-gradient(circle at center, #010149, #01011d, #000000);
   }
 
@@ -187,9 +193,11 @@ code {
     padding: 20px;
   }
 }
+
 .footer {
   grid-area: bottom-section;
   display: grid;
   z-index: 1;
   background-color: #f0f0f0;
+  width: 100vw;
 }
